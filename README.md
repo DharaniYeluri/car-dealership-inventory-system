@@ -114,17 +114,6 @@ Vehicles
 
 ![DriveLine Motors invoice receipt](docs/Invoice.png)
 
-## Test Report
-
-Backend verification:
-
-- Command: cd server && npm test -- --runInBand
-- Result: 1 test file passed, 9 tests passed, 0 failed
-
-Frontend verification:
-
-- Command: cd client && npm run build
-- Result: production build succeeded with Vite
 
 ## My AI Usage
 
