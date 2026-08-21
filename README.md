@@ -104,7 +104,15 @@ Vehicles
 
 ## Screenshots
 
-![DriveLine Motors Inventory Dashboard](docs/dealership-dashboard.svg)
+![DriveLine Motors login screen](docs/login-screen.svg)
+
+![DriveLine Motors registration screen](docs/register-screen.svg)
+
+![DriveLine Motors admin dashboard](docs/admin-dashboard.svg)
+
+![DriveLine Motors customer dashboard](docs/customer-dashboard.svg)
+
+![DriveLine Motors invoice receipt](docs/invoice-receipt.svg)
 
 ## Test Report
 
