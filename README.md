@@ -104,15 +104,15 @@ Vehicles
 
 ## Screenshots
 
-![DriveLine Motors login screen](docs/login-screen.svg)
+![DriveLine Motors registration screen](docs/registration-page.png)
 
-![DriveLine Motors registration screen](docs/register-screen.svg)
+![DriveLine Motors login screen](docs/login-page.png)
 
-![DriveLine Motors admin dashboard](docs/admin-dashboard.svg)
+![DriveLine Motors admin dashboard](docs/Admin%20Portal.png)
 
-![DriveLine Motors customer dashboard](docs/customer-dashboard.svg)
+![DriveLine Motors customer dashboard](docs/user%20portal.png)
 
-![DriveLine Motors invoice receipt](docs/invoice-receipt.svg)
+![DriveLine Motors invoice receipt](docs/Invoice.png)
 
 ## Test Report
 
