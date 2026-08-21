@@ -104,9 +104,9 @@ Vehicles
 
 ## Screenshots
 
-![DriveLine Motors registration screen](docs/registration-page.png)
+![DriveLine Motors registration screen](docs/registration%20page.png)
 
-![DriveLine Motors login screen](docs/login-page.png)
+![DriveLine Motors login screen](docs/login%20page.png)
 
 ![DriveLine Motors admin dashboard](docs/Admin%20Portal.png)
 
