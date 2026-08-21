@@ -17,6 +17,10 @@ app.get('/api/health', (_req: Request, res: Response) => {
 app.post('/api/auth/register', async (req: Request, res: Response) => {
   const { name, email, password, isAdmin } = req.body ?? {};
 
+  if (isAdmin) {
+    return res.status(403).json({ message: 'Admin registration is disabled. Use the default admin account.' });
+  }
+
   if (!name || !email || !password) {
     return res.status(400).json({ message: 'Name, email, and password are required.' });
   }
@@ -58,7 +62,11 @@ app.post('/api/auth/login', async (req: Request, res: Response) => {
   const normalizedEmail = String(email).trim().toLowerCase();
   const user = findUserByEmail(normalizedEmail);
 
-  if (!user || !(await comparePassword(String(password), user.password))) {
+  if (!user) {
+    return res.status(404).json({ message: 'No account found for this email. Please register first.' });
+  }
+
+  if (!(await comparePassword(String(password), user.password))) {
     return res.status(401).json({ message: 'Invalid email or password.' });
   }
 
@@ -140,16 +148,33 @@ app.post('/api/vehicles', requireAuth, requireAdmin, (req: AuthRequest, res: Res
     return res.status(400).json({ message: 'Make, model, category, price, and quantity are required.' });
   }
 
+  const normalizedMake = String(make).trim();
+  const normalizedModel = String(model).trim();
+  const normalizedCategory = String(category).trim();
   const amount = Number(quantity);
   const salePrice = Number(price);
+
+  if (!normalizedMake || !normalizedModel || !normalizedCategory) {
+    return res.status(400).json({ message: 'Make, model, and category cannot be empty.' });
+  }
 
   if (amount < 0 || salePrice < 0) {
     return res.status(400).json({ message: 'Price and quantity must be non-negative.' });
   }
 
+  const existing = db.prepare(
+    'SELECT * FROM vehicles WHERE LOWER(make) = LOWER(?) AND LOWER(model) = LOWER(?) AND LOWER(category) = LOWER(?)',
+  ).get(normalizedMake, normalizedModel, normalizedCategory) as { id: number } | undefined;
+
+  if (existing) {
+    return res.status(409).json({
+      message: 'A vehicle with the same make, model, and category already exists. Please update the existing listing instead.',
+    });
+  }
+
   const result = db.prepare(
     'INSERT INTO vehicles (make, model, category, price, quantity) VALUES (?, ?, ?, ?, ?)',
-  ).run(String(make), String(model), String(category), salePrice, amount);
+  ).run(normalizedMake, normalizedModel, normalizedCategory, salePrice, amount);
 
   const vehicle = db.prepare('SELECT * FROM vehicles WHERE id = ?').get(result.lastInsertRowid) as {
     id: number;
@@ -249,7 +274,7 @@ app.post('/api/vehicles/:id/purchase', requireAuth, (req: AuthRequest, res: Resp
 
   const finalVehicle = db.prepare('SELECT * FROM vehicles WHERE id = ?').get(Number(id));
 
-  return res.json({ message: 'Purchase successful.', vehicle: finalVehicle });
+  return res.json({ message: 'Vehicle purchased successfully. Sale recorded.', vehicle: finalVehicle });
 });
 
 app.post('/api/vehicles/:id/restock', requireAuth, requireAdmin, (req: AuthRequest, res: Response) => {

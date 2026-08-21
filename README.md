@@ -67,6 +67,13 @@ Frontend
 
    The UI runs at http://localhost:5173.
 
+6. Demo login:
+
+   Email: admin@dealership.com
+   Password: Admin123!
+
+   This seeded admin account can create, update, delete, and restock inventory immediately.
+
 ## Environment Notes
 
 The app uses a local SQLite database file created automatically when the backend starts. No external database service is required.

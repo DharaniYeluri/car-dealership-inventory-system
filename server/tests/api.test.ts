@@ -1,5 +1,6 @@
 import { describe, it, expect, beforeAll, afterAll } from 'vitest';
 import request from 'supertest';
+import bcrypt from 'bcryptjs';
 import { app } from '../src/app.js';
 import { db } from '../src/db.js';
 
@@ -16,11 +17,16 @@ describe('Car Dealership API', () => {
       DELETE FROM sqlite_sequence WHERE name='users';
     `);
 
-    const adminRegister = await request(app)
-      .post('/api/auth/register')
-      .send({ name: 'Admin User', email: 'admin@example.com', password: 'Password123!', isAdmin: true });
+    db.prepare(
+      `INSERT OR IGNORE INTO users (id, name, email, password, isAdmin)
+       VALUES (1, 'System Admin', 'admin@dealership.com', ?, 1)`,
+    ).run(bcrypt.hashSync('Admin123!', 10));
 
-    adminToken = adminRegister.body.token;
+    const adminLogin = await request(app)
+      .post('/api/auth/login')
+      .send({ email: 'admin@dealership.com', password: 'Admin123!' });
+
+    adminToken = adminLogin.body.token;
 
     const customerRegister = await request(app)
       .post('/api/auth/register')
@@ -31,6 +37,15 @@ describe('Car Dealership API', () => {
 
   afterAll(async () => {
     // no-op, app is kept in-memory in tests
+  });
+
+  it('blocks admin registration and requires the default admin account', async () => {
+    const response = await request(app)
+      .post('/api/auth/register')
+      .send({ name: 'Admin User', email: 'admin2@example.com', password: 'Password123!', isAdmin: true });
+
+    expect(response.status).toBe(403);
+    expect(response.body.message).toMatch(/admin registration is disabled|default admin account/i);
   });
 
   it('registers a user and returns a JWT', async () => {
@@ -51,6 +66,15 @@ describe('Car Dealership API', () => {
     expect(response.status).toBe(200);
     expect(response.body).toHaveProperty('token');
     expect(response.body.user.email).toBe('customer@example.com');
+  });
+
+  it('asks a user to register when the email does not exist', async () => {
+    const response = await request(app)
+      .post('/api/auth/login')
+      .send({ email: 'missing-user@example.com', password: 'Password123!' });
+
+    expect(response.status).toBe(404);
+    expect(response.body.message).toMatch(/register|not found/i);
   });
 
   it('creates a vehicle with admin auth', async () => {
@@ -91,6 +115,22 @@ describe('Car Dealership API', () => {
     expect(response.body[0].make).toBe('Toyota');
   });
 
+  it('rejects duplicate vehicle entries for the same make, model, and category', async () => {
+    const response = await request(app)
+      .post('/api/vehicles')
+      .set('Authorization', `Bearer ${adminToken}`)
+      .send({
+        make: 'Toyota',
+        model: 'Corolla',
+        category: 'Sedan',
+        price: 27000,
+        quantity: 2,
+      });
+
+    expect(response.status).toBe(409);
+    expect(response.body.message).toMatch(/already exists|duplicate/i);
+  });
+
   it('allows a customer to purchase a vehicle and reduces stock', async () => {
     const response = await request(app)
       .post(`/api/vehicles/${vehicleId}/purchase`)
@@ -98,7 +138,7 @@ describe('Car Dealership API', () => {
       .send({ quantity: 1 });
 
     expect(response.status).toBe(200);
-    expect(response.body.message).toContain('Purchase successful');
+    expect(response.body.message).toContain('Vehicle purchased successfully');
     expect(response.body.vehicle.quantity).toBe(2);
   });
 
