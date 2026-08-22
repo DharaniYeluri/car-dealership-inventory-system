@@ -115,15 +115,15 @@ Vehicles
 
 ## Screenshots
 
-![DriveLine Motors login screen](docs/login-screen.png)
+![DriveLine Motors login screen](docs/login%20page.png)
 
-![DriveLine Motors registration screen](docs/register-screen.png)
+![DriveLine Motors registration screen](docs/registration%20page.png)
 
-![DriveLine Motors admin dashboard](docs/admin-dashboard.png)
+![DriveLine Motors admin dashboard](docs/Admin%20Portal.png)
 
-![DriveLine Motors customer dashboard](docs/customer-dashboard.png)
+![DriveLine Motors customer dashboard](docs/user%portal.png)
 
-![DriveLine Motors invoice receipt](docs/invoice-receipt.png)
+![DriveLine Motors invoice receipt](docs/invoice.png)
 
 The complete test suite results are documented separately in [TEST_REPORT.md](TEST_REPORT.md).
 
