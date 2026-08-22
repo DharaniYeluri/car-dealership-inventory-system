@@ -121,9 +121,9 @@ Vehicles
 
 ![DriveLine Motors admin dashboard](docs/Admin%20Portal.png)
 
-![DriveLine Motors customer dashboard](docs/user%portal.png)
+![DriveLine Motors customer dashboard](docs/user%20portal.png)
 
-![DriveLine Motors invoice receipt](docs/invoice.png)
+![DriveLine Motors invoice receipt](docs/Invoice.png)
 
 The complete test suite results are documented separately in [TEST_REPORT.md](TEST_REPORT.md).
 
