@@ -115,32 +115,17 @@ Vehicles
 
 ## Screenshots
 
-<<<<<<< HEAD
-![DriveLine Motors registration screen](docs/registration%20page.png)
-=======
-<img src="./docs/login-screen.png" alt="DriveLine Motors login screen" width="100%" />
+![DriveLine Motors login screen](docs/login-screen.png)
 
-<img src="./docs/register-screen.png" alt="DriveLine Motors registration screen" width="100%" />
+![DriveLine Motors registration screen](docs/register-screen.png)
 
-<img src="./docs/admin-dashboard.png" alt="DriveLine Motors admin dashboard" width="100%" />
+![DriveLine Motors admin dashboard](docs/admin-dashboard.png)
 
-<img src="./docs/customer-dashboard.png" alt="DriveLine Motors customer dashboard" width="100%" />
+![DriveLine Motors customer dashboard](docs/customer-dashboard.png)
 
-<img src="./docs/invoice-receipt.png" alt="DriveLine Motors invoice receipt" width="100%" />
->>>>>>> 9fb7224 (fix: prepare backend for deployment)
+![DriveLine Motors invoice receipt](docs/invoice-receipt.png)
 
-![DriveLine Motors login screen](docs/login%20page.png)
-
-<<<<<<< HEAD
-![DriveLine Motors admin dashboard](docs/Admin%20Portal.png)
-
-![DriveLine Motors customer dashboard](docs/user%20portal.png)
-
-![DriveLine Motors invoice receipt](docs/Invoice.png)
-
-=======
 The complete test suite results are documented separately in [TEST_REPORT.md](TEST_REPORT.md).
->>>>>>> 9fb7224 (fix: prepare backend for deployment)
 
 ## My AI Usage
 
