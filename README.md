@@ -78,6 +78,17 @@ Frontend
 
 The app uses a local SQLite database file created automatically when the backend starts. No external database service is required.
 
+## Render Deployment
+
+This repository includes a `render.yaml` blueprint for deploying the backend and built frontend as one Render web service.
+
+1. Push the latest changes to the `main` branch on GitHub.
+2. In Render, select **New > Blueprint** and connect `DharaniYeluri/car-dealership-inventory-system`.
+3. Confirm the service name and deploy. Render generates `JWT_SECRET` automatically.
+4. Open the generated Render URL. The frontend and `/api` endpoints use the same origin.
+
+The service uses `/api/health` as its health check. SQLite storage on Render's free tier is ephemeral, so database contents can reset when the service is redeployed or restarted.
+
 ## API Endpoints
 
 Authentication
@@ -104,16 +115,32 @@ Vehicles
 
 ## Screenshots
 
+<<<<<<< HEAD
 ![DriveLine Motors registration screen](docs/registration%20page.png)
+=======
+<img src="./docs/login-screen.png" alt="DriveLine Motors login screen" width="100%" />
+
+<img src="./docs/register-screen.png" alt="DriveLine Motors registration screen" width="100%" />
+
+<img src="./docs/admin-dashboard.png" alt="DriveLine Motors admin dashboard" width="100%" />
+
+<img src="./docs/customer-dashboard.png" alt="DriveLine Motors customer dashboard" width="100%" />
+
+<img src="./docs/invoice-receipt.png" alt="DriveLine Motors invoice receipt" width="100%" />
+>>>>>>> 9fb7224 (fix: prepare backend for deployment)
 
 ![DriveLine Motors login screen](docs/login%20page.png)
 
+<<<<<<< HEAD
 ![DriveLine Motors admin dashboard](docs/Admin%20Portal.png)
 
 ![DriveLine Motors customer dashboard](docs/user%20portal.png)
 
 ![DriveLine Motors invoice receipt](docs/Invoice.png)
 
+=======
+The complete test suite results are documented separately in [TEST_REPORT.md](TEST_REPORT.md).
+>>>>>>> 9fb7224 (fix: prepare backend for deployment)
 
 ## My AI Usage
 
@@ -140,3 +167,7 @@ Example:
 ## License
 
 This project is for educational and portfolio use.
+
+## My AI Usage
+
+I used GitHub Copilot during this project to help scaffold the Express API, generate initial unit tests, and refine the React component structure. I also used AI to brainstorm validation edge cases around stock purchasing and authentication flow. AI helped me move faster and catch issues earlier, but I reviewed every change, ran the real test suite, and validated the final behavior manually before finishing the project.

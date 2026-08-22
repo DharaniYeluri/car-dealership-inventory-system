@@ -1,0 +1,103 @@
+<svg width="1280" height="780" viewBox="0 0 1280 780" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="1280" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#020B17"/>
+      <stop offset="0.5" stop-color="#071B2D"/>
+      <stop offset="1" stop-color="#120D20"/>
+    </linearGradient>
+    <linearGradient id="modal5" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0D1D2E"/>
+      <stop offset="1" stop-color="#0B1526"/>
+    </linearGradient>
+    <linearGradient id="purple5" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#B17EF7"/>
+      <stop offset="1" stop-color="#7D5BE6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="780" fill="url(#bg5)"/>
+  <g opacity="0.14">
+    <g stroke="#85E6FF" stroke-opacity="0.12">
+      <path d="M0 120H1280"/>
+      <path d="M0 240H1280"/>
+      <path d="M0 360H1280"/>
+      <path d="M0 480H1280"/>
+      <path d="M0 600H1280"/>
+      <path d="M0 720H1280"/>
+      <path d="M160 0V780"/>
+      <path d="M320 0V780"/>
+      <path d="M480 0V780"/>
+      <path d="M640 0V780"/>
+      <path d="M800 0V780"/>
+      <path d="M960 0V780"/>
+      <path d="M1120 0V780"/>
+    </g>
+  </g>
+
+  <g>
+    <rect x="350" y="90" width="740" height="590" rx="26" fill="url(#modal5)" stroke="#8F8FE3" stroke-opacity="0.7"/>
+    <rect x="384" y="128" width="84" height="52" rx="16" fill="#111F2C" stroke="#7A8AC8"/>
+    <text x="426" y="161" text-anchor="middle" font-size="28" font-weight="800" fill="#F0F4FF" font-family="Arial, Helvetica, sans-serif">D</text>
+    <text x="486" y="164" font-size="30" font-weight="800" fill="#F0F4FF" font-family="Arial, Helvetica, sans-serif">DriveLine Motors</text>
+    <rect x="965" y="136" width="86" height="30" rx="12" fill="#111E2C" stroke="#7A8AC8" stroke-opacity="0.6"/>
+    <text x="1008" y="156" text-anchor="middle" font-size="12" fill="#EDEEF9" font-family="Arial, Helvetica, sans-serif">PAID</text>
+
+    <line x1="382" y1="201" x2="1060" y2="201" stroke="#6C7DB7" stroke-opacity="0.7"/>
+
+    <text x="390" y="232" font-size="12" fill="#B8C5E7" font-family="Arial, Helvetica, sans-serif" letter-spacing="2">SALES &amp; SERVICE</text>
+    <text x="390" y="250" font-size="12" fill="#B8C5E7" font-family="Arial, Helvetica, sans-serif" letter-spacing="2">Official invoice</text>
+    <text x="936" y="232" font-size="12" fill="#B8C5E7" font-family="Arial, Helvetica, sans-serif" letter-spacing="2">INV-1787324252676</text>
+    <text x="936" y="250" font-size="12" fill="#B8C5E7" font-family="Arial, Helvetica, sans-serif">8/21/2026, 8:28:03 PM</text>
+
+    <g>
+      <text x="390" y="312" font-size="14" fill="#C9D6F6" font-family="Arial, Helvetica, sans-serif">Invoice</text>
+      <text x="390" y="332" font-size="14" fill="#C9D6F6" font-family="Arial, Helvetica, sans-serif">Customer</text>
+      <text x="390" y="352" font-size="14" fill="#C9D6F6" font-family="Arial, Helvetica, sans-serif">Date</text>
+      <text x="610" y="312" font-size="14" fill="#EEF5FF" font-family="Arial, Helvetica, sans-serif">INV-1787324252676</text>
+      <text x="610" y="332" font-size="14" fill="#EEF5FF" font-family="Arial, Helvetica, sans-serif">Dharani Yeluri</text>
+      <text x="610" y="352" font-size="14" fill="#EEF5FF" font-family="Arial, Helvetica, sans-serif">8/21/2026, 8:28:03 PM</text>
+    </g>
+
+    <line x1="382" y1="382" x2="1060" y2="382" stroke="#6C7DB7" stroke-opacity="0.7"/>
+
+    <g>
+      <text x="390" y="432" font-size="14" fill="#C8D4F1" font-family="Arial, Helvetica, sans-serif">BMW X5</text>
+      <text x="390" y="452" font-size="12" fill="#A5B7E2" font-family="Arial, Helvetica, sans-serif">Category</text>
+      <text x="570" y="432" font-size="14" fill="#EEF5FF" font-family="Arial, Helvetica, sans-serif">1 × $62,900</text>
+      <text x="570" y="452" font-size="12" fill="#A5B7E2" font-family="Arial, Helvetica, sans-serif">SUV</text>
+      <text x="936" y="432" font-size="14" fill="#EEF5FF" font-family="Arial, Helvetica, sans-serif">$62,900</text>
+    </g>
+
+    <line x1="382" y1="470" x2="1060" y2="470" stroke="#6C7DB7" stroke-opacity="0.7"/>
+
+    <g>
+      <text x="390" y="506" font-size="14" fill="#C8D4F1" font-family="Arial, Helvetica, sans-serif">Subtotal</text>
+      <text x="390" y="528" font-size="14" fill="#C8D4F1" font-family="Arial, Helvetica, sans-serif">Tax (8%)</text>
+      <text x="390" y="550" font-size="14" fill="#C8D4F1" font-family="Arial, Helvetica, sans-serif">Service fee</text>
+      <text x="390" y="572" font-size="14" fill="#C8D4F1" font-family="Arial, Helvetica, sans-serif">Payment</text>
+      <text x="936" y="506" font-size="14" fill="#EEF5FF" font-family="Arial, Helvetica, sans-serif">$62,900</text>
+      <text x="936" y="528" font-size="14" fill="#EEF5FF" font-family="Arial, Helvetica, sans-serif">$5,032</text>
+      <text x="936" y="550" font-size="14" fill="#EEF5FF" font-family="Arial, Helvetica, sans-serif">$299</text>
+      <text x="936" y="572" font-size="14" fill="#EEF5FF" font-family="Arial, Helvetica, sans-serif">Visa •••• 4821</text>
+    </g>
+
+    <line x1="382" y1="590" x2="1060" y2="590" stroke="#6C7DB7" stroke-opacity="0.7"/>
+
+    <text x="390" y="624" font-size="18" font-weight="800" fill="#F4F7FF" font-family="Arial, Helvetica, sans-serif">Total charged</text>
+    <text x="936" y="624" font-size="20" font-weight="800" fill="#F4F7FF" font-family="Arial, Helvetica, sans-serif">$68,231</text>
+
+    <rect x="390" y="640" width="250" height="24" rx="10" fill="#111E2C"/>
+    <text x="442" y="656" font-size="12" fill="#C9D6F6" font-family="Arial, Helvetica, sans-serif">AUTHORIZED BY</text>
+    <text x="760" y="656" font-size="12" fill="#C9D6F6" font-family="Arial, Helvetica, sans-serif">DriveLine Motors Sales Team</text>
+    <text x="760" y="674" font-size="12" fill="#44E7B1" font-family="Arial, Helvetica, sans-serif">APPROVED</text>
+
+    <text x="590" y="718" text-anchor="middle" font-size="16" fill="#53D7B7" font-family="Arial, Helvetica, sans-serif">Thank you for choosing DriveLine Motors.</text>
+
+    <rect x="706" y="620" width="124" height="40" rx="12" fill="#1D2C3D" stroke="#89A2DE" stroke-opacity="0.6"/>
+    <text x="768" y="646" text-anchor="middle" font-size="14" font-weight="700" fill="#F0F5FF" font-family="Arial, Helvetica, sans-serif">Print</text>
+    <rect x="844" y="620" width="124" height="40" rx="12" fill="url(#purple5)"/>
+    <text x="906" y="646" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif">Download</text>
+    <rect x="982" y="620" width="124" height="40" rx="12" fill="#1D2C3D" stroke="#89A2DE" stroke-opacity="0.6"/>
+    <text x="1044" y="646" text-anchor="middle" font-size="14" font-weight="700" fill="#F0F5FF" font-family="Arial, Helvetica, sans-serif">Close</text>
+  </g>
+</svg>

@@ -1,0 +1,72 @@
+<svg width="1280" height="780" viewBox="0 0 1280 780" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#020B17"/>
+      <stop offset="0.5" stop-color="#071B2D"/>
+      <stop offset="1" stop-color="#120D20"/>
+    </linearGradient>
+    <radialGradient id="carGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1080 720) rotate(90) scale(360 480)">
+      <stop stop-color="#8E6DFF" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#8E6DFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0B1E2F"/>
+      <stop offset="1" stop-color="#0C1628"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#B27BFF"/>
+      <stop offset="1" stop-color="#855AEF"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="780" fill="url(#bg)"/>
+  <g opacity="0.26">
+    <path d="M0 0H1280V780H0V0Z" fill="url(#carGlow)"/>
+    <g stroke="#7BE7FF" stroke-opacity="0.12">
+      <path d="M0 120H1280"/>
+      <path d="M0 240H1280"/>
+      <path d="M0 360H1280"/>
+      <path d="M0 480H1280"/>
+      <path d="M0 600H1280"/>
+      <path d="M0 720H1280"/>
+      <path d="M160 0V780"/>
+      <path d="M320 0V780"/>
+      <path d="M480 0V780"/>
+      <path d="M640 0V780"/>
+      <path d="M800 0V780"/>
+      <path d="M960 0V780"/>
+      <path d="M1120 0V780"/>
+    </g>
+  </g>
+
+  <g opacity="0.38">
+    <path d="M910 520C1000 540 1048 510 1108 452C1180 382 1228 266 1210 156L1280 0V780H920L910 520Z" fill="#0B1627"/>
+    <path d="M910 520C1000 540 1048 510 1108 452C1180 382 1228 266 1210 156L1280 0V780H920L910 520Z" fill="url(#carGlow)"/>
+  </g>
+
+  <g>
+    <rect x="350" y="80" width="580" height="620" rx="28" fill="url(#panel)" stroke="#6B7AD9" stroke-opacity="0.9"/>
+    <text x="640" y="174" text-anchor="middle" font-size="54" font-weight="800" fill="#F0F3FF" font-family="Arial, Helvetica, sans-serif">DriveLine Motors</text>
+
+    <rect x="430" y="220" width="235" height="64" rx="32" fill="#2B2F43"/>
+    <rect x="670" y="220" width="182" height="64" rx="32" fill="url(#purple)"/>
+    <text x="547" y="261" text-anchor="middle" font-size="22" font-weight="700" fill="#EAF2FF" font-family="Arial, Helvetica, sans-serif">Login</text>
+    <text x="760" y="261" text-anchor="middle" font-size="22" font-weight="700" fill="#F5F6FF" font-family="Arial, Helvetica, sans-serif">Register</text>
+
+    <rect x="430" y="308" width="250" height="64" rx="18" fill="#14B887"/>
+    <text x="555" y="349" text-anchor="middle" font-size="22" font-weight="700" fill="#EAFBF5" font-family="Arial, Helvetica, sans-serif">Customer Login</text>
+    <rect x="700" y="308" width="170" height="64" rx="18" fill="#2B2F43"/>
+    <text x="785" y="349" text-anchor="middle" font-size="22" font-weight="700" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif">Admin Login</text>
+
+    <text x="430" y="430" font-size="22" font-weight="500" fill="#D9E5FF" font-family="Arial, Helvetica, sans-serif">Email</text>
+    <rect x="430" y="446" width="440" height="58" rx="12" fill="#081A2D" stroke="#7C72FF" stroke-opacity="0.9"/>
+    <text x="455" y="482" font-size="22" fill="#A2B1CC" font-family="Arial, Helvetica, sans-serif">you@example.com</text>
+
+    <text x="430" y="555" font-size="22" font-weight="500" fill="#D9E5FF" font-family="Arial, Helvetica, sans-serif">Password</text>
+    <rect x="430" y="570" width="440" height="58" rx="12" fill="#081A2D" stroke="#7C72FF" stroke-opacity="0.9"/>
+    <text x="458" y="607" font-size="30" fill="#D9D9D9" font-family="Arial, Helvetica, sans-serif">••••••••</text>
+
+    <rect x="430" y="655" width="440" height="60" rx="18" fill="url(#purple)"/>
+    <text x="650" y="694" text-anchor="middle" font-size="28" font-weight="800" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif">Sign in</text>
+  </g>
+</svg>

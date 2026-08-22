@@ -1,0 +1,108 @@
+<svg width="1280" height="780" viewBox="0 0 1280 780" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1280" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#030D18"/>
+      <stop offset="0.55" stop-color="#071922"/>
+      <stop offset="1" stop-color="#0E1326"/>
+    </linearGradient>
+    <linearGradient id="purple4" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#B17EF7"/>
+      <stop offset="1" stop-color="#7D5BE6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="780" fill="url(#bg4)"/>
+  <g opacity="0.18">
+    <g stroke="#85E6FF" stroke-opacity="0.12">
+      <path d="M0 120H1280"/>
+      <path d="M0 240H1280"/>
+      <path d="M0 360H1280"/>
+      <path d="M0 480H1280"/>
+      <path d="M0 600H1280"/>
+      <path d="M0 720H1280"/>
+      <path d="M160 0V780"/>
+      <path d="M320 0V780"/>
+      <path d="M480 0V780"/>
+      <path d="M640 0V780"/>
+      <path d="M800 0V780"/>
+      <path d="M960 0V780"/>
+      <path d="M1120 0V780"/>
+    </g>
+  </g>
+
+  <g>
+    <rect width="1280" height="74" fill="#081827" fill-opacity="0.58"/>
+    <text x="66" y="48" font-size="16" fill="#D7DDF6" font-family="Arial, Helvetica, sans-serif" letter-spacing="3">DRIVELINE MOTORS</text>
+    <text x="74" y="104" font-size="38" font-weight="800" fill="#F3F8FF" font-family="Arial, Helvetica, sans-serif">Inventory Dashboard</text>
+    <rect x="1068" y="26" width="132" height="40" rx="18" fill="#111C2C" stroke="#8B9CB7" stroke-opacity="0.5"/>
+    <text x="1134" y="51" text-anchor="middle" font-size="13" font-weight="700" fill="#EDECF7" font-family="Arial, Helvetica, sans-serif">DHARANI YELURI</text>
+    <rect x="1210" y="26" width="68" height="40" rx="18" fill="#111C2C" stroke="#8B9CB7" stroke-opacity="0.5"/>
+    <text x="1244" y="51" text-anchor="middle" font-size="13" font-weight="700" fill="#EDECF7" font-family="Arial, Helvetica, sans-serif">Logout</text>
+
+    <rect x="72" y="134" width="232" height="140" rx="16" fill="#182336" stroke="#7D8ACC" stroke-opacity="0.7"/>
+    <text x="92" y="164" font-size="13" fill="#C9D1F0" font-family="Arial, Helvetica, sans-serif" letter-spacing="2">TOTAL VEHICLES</text>
+    <text x="92" y="215" font-size="44" font-weight="800" fill="#EEF3FF" font-family="Arial, Helvetica, sans-serif">5</text>
+
+    <rect x="324" y="134" width="228" height="140" rx="16" fill="#112D32" stroke="#7D8ACC" stroke-opacity="0.7"/>
+    <text x="344" y="164" font-size="13" fill="#C9D1F0" font-family="Arial, Helvetica, sans-serif" letter-spacing="2">IN STOCK</text>
+    <text x="344" y="215" font-size="44" font-weight="800" fill="#3EE0BA" font-family="Arial, Helvetica, sans-serif">5</text>
+
+    <rect x="572" y="134" width="228" height="140" rx="16" fill="#2F2420" stroke="#7D8ACC" stroke-opacity="0.7"/>
+    <text x="592" y="164" font-size="13" fill="#C9D1F0" font-family="Arial, Helvetica, sans-serif" letter-spacing="2">LOW STOCK</text>
+    <text x="592" y="215" font-size="44" font-weight="800" fill="#F2C14A" font-family="Arial, Helvetica, sans-serif">3</text>
+
+    <rect x="72" y="302" width="248" height="410" rx="20" fill="#0E1A2B" stroke="#6D7DB7" stroke-opacity="0.75"/>
+    <text x="90" y="338" font-size="12" fill="#B4C2E5" font-family="Arial, Helvetica, sans-serif" letter-spacing="2">NAVIGATION</text>
+    <rect x="90" y="350" width="210" height="33" rx="12" fill="#1A2237"/>
+    <text x="108" y="372" font-size="16" fill="#EEF2FC" font-family="Arial, Helvetica, sans-serif">Overview</text>
+    <rect x="90" y="390" width="210" height="33" rx="12" fill="#2A2C63"/>
+    <text x="108" y="412" font-size="16" fill="#EEF2FC" font-family="Arial, Helvetica, sans-serif">Inventory</text>
+
+    <rect x="350" y="298" width="642" height="358" rx="18" fill="#0B1A2D" stroke="#7A8AC8" stroke-opacity="0.8"/>
+    <text x="374" y="338" font-size="28" font-weight="800" fill="#F3F7FF" font-family="Arial, Helvetica, sans-serif">Available vehicles</text>
+    <rect x="804" y="318" width="150" height="38" rx="12" fill="#101A2B" stroke="#7A8AC8" stroke-opacity="0.5"/>
+    <text x="879" y="343" text-anchor="middle" font-size="14" fill="#C7D6F8" font-family="Arial, Helvetica, sans-serif">Search make or model</text>
+
+    <rect x="374" y="362" width="170" height="34" rx="8" fill="#101A2B" stroke="#7A8AC8" stroke-opacity="0.4"/>
+    <text x="390" y="384" font-size="14" fill="#C7D6F8" font-family="Arial, Helvetica, sans-serif">Category</text>
+    <rect x="563" y="362" width="170" height="34" rx="8" fill="#101A2B" stroke="#7A8AC8" stroke-opacity="0.4"/>
+    <text x="579" y="384" font-size="14" fill="#C7D6F8" font-family="Arial, Helvetica, sans-serif">Min price</text>
+    <rect x="752" y="362" width="170" height="34" rx="8" fill="#101A2B" stroke="#7A8AC8" stroke-opacity="0.4"/>
+    <text x="768" y="384" font-size="14" fill="#C7D6F8" font-family="Arial, Helvetica, sans-serif">Max price</text>
+    <rect x="936" y="362" width="40" height="34" rx="8" fill="#101A2B" stroke="#7A8AC8" stroke-opacity="0.4"/>
+    <text x="956" y="384" text-anchor="middle" font-size="14" fill="#E2EBFF" font-family="Arial, Helvetica, sans-serif">Clear</text>
+
+    <g>
+      <rect x="374" y="408" width="160" height="180" rx="14" fill="#101A2B" stroke="#7B8AD0" stroke-opacity="0.8"/>
+      <text x="392" y="434" font-size="12" fill="#D4DDF7" font-family="Arial, Helvetica, sans-serif" letter-spacing="2">SEDAN</text>
+      <text x="392" y="462" font-size="28" font-weight="700" fill="#F4F7FE" font-family="Arial, Helvetica, sans-serif">Toyota</text>
+      <text x="392" y="490" font-size="18" fill="#EAF3FF" font-family="Arial, Helvetica, sans-serif">Corolla</text>
+      <text x="392" y="527" font-size="12" fill="#B8C3E3" font-family="Arial, Helvetica, sans-serif" letter-spacing="2">PRICE</text>
+      <text x="392" y="555" font-size="26" font-weight="800" fill="#E9F1FF" font-family="Arial, Helvetica, sans-serif">$25,000</text>
+      <rect x="392" y="566" width="132" height="30" rx="8" fill="url(#purple4)"/>
+      <text x="458" y="586" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif">Purchase</text>
+    </g>
+
+    <g>
+      <rect x="556" y="408" width="160" height="180" rx="14" fill="#101A2B" stroke="#7B8AD0" stroke-opacity="0.8"/>
+      <text x="574" y="434" font-size="12" fill="#D4DDF7" font-family="Arial, Helvetica, sans-serif" letter-spacing="2">SUV</text>
+      <text x="574" y="462" font-size="28" font-weight="700" fill="#F4F7FE" font-family="Arial, Helvetica, sans-serif">Ford</text>
+      <text x="574" y="490" font-size="18" fill="#EAF3FF" font-family="Arial, Helvetica, sans-serif">Explorer</text>
+      <text x="574" y="527" font-size="12" fill="#B8C3E3" font-family="Arial, Helvetica, sans-serif" letter-spacing="2">PRICE</text>
+      <text x="574" y="555" font-size="26" font-weight="800" fill="#E9F1FF" font-family="Arial, Helvetica, sans-serif">$38,500</text>
+      <rect x="574" y="566" width="132" height="30" rx="8" fill="url(#purple4)"/>
+      <text x="640" y="586" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif">Purchase</text>
+    </g>
+
+    <g>
+      <rect x="738" y="408" width="160" height="180" rx="14" fill="#101A2B" stroke="#7B8AD0" stroke-opacity="0.8"/>
+      <text x="756" y="434" font-size="12" fill="#D4DDF7" font-family="Arial, Helvetica, sans-serif" letter-spacing="2">TRUCK</text>
+      <text x="756" y="462" font-size="28" font-weight="700" fill="#F4F7FE" font-family="Arial, Helvetica, sans-serif">Chevrolet</text>
+      <text x="756" y="490" font-size="18" fill="#EAF3FF" font-family="Arial, Helvetica, sans-serif">Silverado</text>
+      <text x="756" y="527" font-size="12" fill="#B8C3E3" font-family="Arial, Helvetica, sans-serif" letter-spacing="2">PRICE</text>
+      <text x="756" y="555" font-size="26" font-weight="800" fill="#E9F1FF" font-family="Arial, Helvetica, sans-serif">$44,000</text>
+      <rect x="756" y="566" width="132" height="30" rx="8" fill="url(#purple4)"/>
+      <text x="822" y="586" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif">Purchase</text>
+    </g>
+  </g>
+</svg>

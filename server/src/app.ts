@@ -1,10 +1,13 @@
 import express, { Request, Response } from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
+import { resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { db } from './db.js';
 import { AuthRequest, comparePassword, createUser, findUserByEmail, generateToken, hashPassword, requireAdmin, requireAuth } from './auth.js';
 
 export const app = express();
+const clientDistPath = resolve(fileURLToPath(new URL('.', import.meta.url)), '../../../client/dist');
 
 app.use(cors());
 app.use(express.json());
@@ -306,6 +309,11 @@ app.post('/api/vehicles/:id/restock', requireAuth, requireAdmin, (req: AuthReque
   const finalVehicle = db.prepare('SELECT * FROM vehicles WHERE id = ?').get(Number(id));
 
   return res.json({ message: 'Vehicle restocked successfully.', vehicle: finalVehicle });
+});
+
+app.use(express.static(clientDistPath));
+app.get('*', (_req: Request, res: Response) => {
+  res.sendFile(resolve(clientDistPath, 'index.html'));
 });
 
 app.use((err: unknown, _req: Request, res: Response, _next: () => void) => {
