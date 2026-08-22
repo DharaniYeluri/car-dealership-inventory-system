@@ -3,7 +3,7 @@ services:
     name: car-dealership-inventory-system
     runtime: node
     plan: free
-    buildCommand: npm install --prefix server && npm install --prefix client && npm run build --prefix server && npm run build --prefix client
+    buildCommand: npm ci --include=dev --prefix server && npm ci --include=dev --prefix client && npm run build --prefix server && npm run build --prefix client
     startCommand: npm start --prefix server
     healthCheckPath: /api/health
     envVars:
